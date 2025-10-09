@@ -65,6 +65,8 @@ export default function ContactStep() {
     const { name, value } = e.target;
     updateState({
       contact: {
+        name: state.contact?.name || '',
+        email: state.contact?.email || '',
         ...state.contact,
         [name]: value,
       },
