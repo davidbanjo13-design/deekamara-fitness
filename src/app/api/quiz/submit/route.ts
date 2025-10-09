@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     // Send confirmation email to user
     try {
       await resend.emails.send({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_FROM!,
         to: quizData.contact.email,
         subject: 'Welcome to DeeKamara Fitness!',
         html: generateUserEmailHtml(quizData),
@@ -69,8 +69,8 @@ export async function POST(request: Request) {
     // Send notification email to admin
     try {
       await resend.emails.send({
-        from: process.env.EMAIL_FROM,
-        to: process.env.ADMIN_EMAIL,
+        from: process.env.EMAIL_FROM!,
+        to: process.env.ADMIN_EMAIL!,
         subject: `New Quiz Submission: ${quizData.contact.name}`,
         html: generateAdminEmailHtml(quizData),
       });
