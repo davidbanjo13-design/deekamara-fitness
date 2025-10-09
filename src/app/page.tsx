@@ -112,7 +112,7 @@ export default function Home() {
                 ONLINE COACHING
               </h2>
               <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-12">
-                Transform your fitness from anywhere with my Online Personal Coaching. Whether you're at home, travelling, or just prefer training on your own schedule, I'll create a personalised programme tailored to your goals — from fat loss and muscle gain to improving strength, endurance, and overall wellbeing.
+                Transform your fitness from anywhere with my Online Personal Coaching. Whether you&apos;re at home, travelling, or just prefer training on your own schedule, I&apos;ll create a personalised programme tailored to your goals — from fat loss and muscle gain to improving strength, endurance, and overall wellbeing.
               </p>
             </motion.div>
 
@@ -124,7 +124,7 @@ export default function Home() {
               className="bg-white rounded-3xl p-8 md:p-12 shadow-xl"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                With my online coaching, you'll get:
+                With my online coaching, you&apos;ll get:
               </h3>
               <ul className="space-y-6">
                 {[
@@ -153,7 +153,7 @@ export default function Home() {
 
               <div className="mt-12 text-center">
                 <p className="text-lg text-gray-700 mb-8">
-                  No matter your starting point, I'll help you stay consistent, overcome obstacles, and see real results — all from the comfort of your own space.
+                  No matter your starting point, I&apos;ll help you stay consistent, overcome obstacles, and see real results — all from the comfort of your own space.
                 </p>
                 <Link
                   href="/quiz"

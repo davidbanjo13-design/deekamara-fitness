@@ -52,13 +52,13 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
             <div className="prose prose-lg">
               <p className="text-gray-700 mb-4">
-                Hi, I'm Dee, a qualified Personal Trainer and coach passionate about helping people unlock their full potential. My own journey started with struggling to gain weight and build confidence in the gym so I know how it feels to want change but not know where to start. Over the years I've built not only my strength, but also a lifestyle I'm proud of, and now I help others do the same.
+                Hi, I&apos;m Dee, a qualified Personal Trainer and coach passionate about helping people unlock their full potential. My own journey started with struggling to gain weight and build confidence in the gym so I know how it feels to want change but not know where to start. Over the years I&apos;ve built not only my strength, but also a lifestyle I&apos;m proud of, and now I help others do the same.
               </p>
               <p className="text-gray-700 mb-4">
-                I believe that fitness is more than just physical transformation—it's about building confidence, mental strength, and creating lasting lifestyle changes. My approach combines proven training methods with personalized nutrition guidance and unwavering support.
+                I believe that fitness is more than just physical transformation—it&apos;s about building confidence, mental strength, and creating lasting lifestyle changes. My approach combines proven training methods with personalized nutrition guidance and unwavering support.
               </p>
               <p className="text-gray-700">
-                Whether you're just starting your fitness journey or looking to break through plateaus, I'm here to guide you every step of the way. Together, we'll create a customized plan that fits your lifestyle and helps you achieve sustainable results.
+                Whether you&apos;re just starting your fitness journey or looking to break through plateaus, I&apos;m here to guide you every step of the way. Together, we&apos;ll create a customized plan that fits your lifestyle and helps you achieve sustainable results.
               </p>
             </div>
           </motion.div>

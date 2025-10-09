@@ -18,9 +18,9 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
       if (saved) {
         try {
           return JSON.parse(saved);
-        } catch (e) {
-          console.error('Failed to parse saved quiz progress');
-        }
+      } catch {
+        console.error('Failed to parse saved quiz progress');
+      }
       }
     }
     return defaultState;

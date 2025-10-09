@@ -12,11 +12,6 @@ const goalLabels = {
   'strength': 'Strength Training',
 };
 
-const genderLabels = {
-  'female': 'Female',
-  'male': 'Male',
-  'other': 'Other',
-};
 
 const ageLabels = {
   'under-20': 'Under 20',
@@ -34,7 +29,7 @@ export default function ThankYouPage() {
     if (savedData) {
       try {
         setQuizData(JSON.parse(savedData));
-      } catch (e) {
+      } catch {
         console.error('Failed to parse quiz data');
       }
     }
@@ -92,7 +87,7 @@ export default function ThankYouPage() {
             Thank You, {quizData.contact.name}!
           </h1>
           <p className="text-gray-600 text-center mb-8">
-            I'm excited to be part of your fitness journey. I'll be in touch with you soon at{' '}
+            I&apos;m excited to be part of your fitness journey. I&apos;ll be in touch with you soon at{' '}
             <span className="text-pink-600 font-semibold">{quizData.contact.email}</span>
           </p>
 
@@ -156,7 +151,7 @@ export default function ThankYouPage() {
                 }}
               >
                 <div className="text-sm text-gray-600 mb-2">Your Motivation</div>
-                <div className="text-gray-800 italic">"{quizData.motivation}"</div>
+                <div className="text-gray-800 italic">&quot;{quizData.motivation}&quot;</div>
               </motion.div>
             </motion.div>
           </div>
@@ -177,7 +172,7 @@ export default function ThankYouPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Check Your Email</h3>
-                <p className="text-gray-600">I'll send you a detailed welcome message within 24 hours.</p>
+                <p className="text-gray-600">I&apos;ll send you a detailed welcome message within 24 hours.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -186,7 +181,7 @@ export default function ThankYouPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Book Your Call</h3>
-                <p className="text-gray-600">We'll schedule a quick call to discuss your goals in detail.</p>
+                <p className="text-gray-600">We&apos;ll schedule a quick call to discuss your goals in detail.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
