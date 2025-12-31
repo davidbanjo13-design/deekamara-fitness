@@ -20,7 +20,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section - Full height, centered typography */}
-      <Section theme="light" padding="xl" className="relative min-h-screen flex items-center">
+      <Section theme="light" padding="xl" className="relative min-h-screen flex items-center pt-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image

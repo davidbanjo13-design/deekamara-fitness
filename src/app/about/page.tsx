@@ -35,7 +35,7 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero Section - Similar to homepage */}
-      <Section theme="light" padding="xl" className="relative min-h-[70vh] flex items-center">
+      <Section theme="light" padding="xl" className="relative min-h-[70vh] flex items-center pt-20">
         {/* Background Image with border treatment */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-8 sm:inset-12 md:inset-16 lg:inset-20 rounded-3xl overflow-hidden">
