@@ -111,17 +111,17 @@ export default function Home() {
               {
                 title: 'Personalised Programming',
                 description: 'Training plans built around your goals, schedule, and starting point—so it fits your life.',
-                image: '/placeholder-feature-1.jpg',
+                image: '/features/personalised-programming.jpg',
               },
               {
                 title: 'Balance Over Burnout',
                 description: 'Progress without extremes. We build strength, confidence, and consistency with smart recovery.',
-                image: '/placeholder-feature-2.jpg',
+                image: '/features/balance-over-burnout.jpg',
               },
               {
                 title: 'Coaching & Accountability',
                 description: 'Weekly check-ins, feedback, and support to keep you moving forward—especially when motivation dips.',
-                image: '/placeholder-feature-3.jpg',
+                image: '/features/coaching-accountability.jpg',
               },
             ].map((feature, index) => (
               <motion.div
@@ -132,7 +132,14 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="group"
               >
-                <div className="relative h-64 mb-6 overflow-hidden rounded-2xl bg-gray-800">
+                <div className="relative h-64 mb-6 overflow-hidden rounded-2xl bg-gray-900">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="object-cover grayscale contrast-125 group-hover:scale-[1.02] transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark/60" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
