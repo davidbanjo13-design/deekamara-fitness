@@ -58,7 +58,7 @@ export default function HowItWorks() {
             className="relative"
           >
             {/* Step Number */}
-            <div className="text-8xl font-display text-gray-100 mb-4">
+            <div className="text-8xl font-display text-pink-200/80 mb-4">
               {step.number}
             </div>
             
