@@ -62,14 +62,10 @@ export default function AboutPage() {
                 Meet Your Coach
               </Badge>
               
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-display mb-6 text-dark">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-display mb-6 text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.65)]">
                 About{' '}
                 <span className="font-display-italic">DeeKamara</span>
               </h1>
-              
-              <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed">
-                Qualified Personal Trainer helping people unlock their full potential through personalized fitness coaching.
-              </p>
             </motion.div>
           </div>
         </Container>

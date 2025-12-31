@@ -8,7 +8,6 @@ import Section from '@/components/ui/Section';
 import Container from '@/components/ui/Container';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
-import SocialProofStrip from '@/components/landing/SocialProofStrip';
 import HowItWorks from '@/components/landing/HowItWorks';
 import TestimonialCard from '@/components/landing/TestimonialCard';
 import FAQAccordion from '@/components/landing/FAQAccordion';
@@ -68,9 +67,9 @@ export default function Home() {
         </Container>
 
         {/* Mobile CTAs pinned near bottom (so image stays clear) */}
-        <div className="sm:hidden absolute left-0 right-0 z-20 px-4 pb-4" style={{ bottom: '96px' }}>
+        <div className="sm:hidden absolute left-0 right-0 z-20 px-4 pb-4" style={{ bottom: '24px' }}>
           <div className="max-w-lg mx-auto">
-            <div className="bg-white/70 backdrop-blur-md border border-white/60 rounded-2xl p-3 shadow-[0_8px_24px_rgba(0,0,0,0.10)]">
+            <div className="bg-white/70 backdrop-blur-md rounded-2xl p-3 shadow-[0_8px_24px_rgba(0,0,0,0.10)]">
               <div className="flex gap-3">
                 <Link href="/quiz" className="flex-1">
                   <Button variant="primary" size="md" fullWidth>
@@ -78,7 +77,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/about" className="flex-1">
-                  <Button variant="secondary" size="md" fullWidth>
+                  <Button variant="secondary" size="md" fullWidth className="border-0">
                     Learn More
                   </Button>
                 </Link>
@@ -87,12 +86,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Social Proof at bottom of hero */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 bg-white/90 backdrop-blur-sm">
-          <Container size="lg">
-            <SocialProofStrip />
-          </Container>
-        </div>
+        {/* Social Proof removed */}
       </Section>
 
       {/* How It Works Section */}
