@@ -101,7 +101,7 @@ export default function Home() {
               <span className="font-display-italic">Understands</span> You
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Sensia is your AI-driven coach that listens, learns, and adapts, helping your body find its natural rhythm every day.
+              DeeKamara coaching is built around smart training, sustainable nutrition, and real accountability—so you can stay consistent and see results that last.
             </p>
           </motion.div>
 
@@ -109,18 +109,18 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'AI That Listens',
-                description: 'Each plan starts from how you feel, not from a preset routine.',
+                title: 'Personalised Programming',
+                description: 'Training plans built around your goals, schedule, and starting point—so it fits your life.',
                 image: '/placeholder-feature-1.jpg',
               },
               {
                 title: 'Balance Over Burnout',
-                description: 'Sensia helps you find consistency through calm, recovery, and intention.',
+                description: 'Progress without extremes. We build strength, confidence, and consistency with smart recovery.',
                 image: '/placeholder-feature-2.jpg',
               },
               {
-                title: 'Effortless Connection',
-                description: 'Syncs with Apple Watch, Garmin, and more, or just use your phone.',
+                title: 'Coaching & Accountability',
+                description: 'Weekly check-ins, feedback, and support to keep you moving forward—especially when motivation dips.',
                 image: '/placeholder-feature-3.jpg',
               },
             ].map((feature, index) => (
