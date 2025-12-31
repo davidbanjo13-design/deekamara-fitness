@@ -48,7 +48,11 @@ export async function POST(request: Request) {
     if (dbError) {
       console.error('Database error:', dbError);
       return NextResponse.json(
-        { error: 'Failed to submit quiz', details: dbError },
+        {
+          error: 'Failed to submit quiz',
+          details: dbError.message,
+          code: dbError.code,
+        },
         { status: 500 }
       );
     }
