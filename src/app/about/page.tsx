@@ -54,11 +54,8 @@ export default function AboutPage() {
               <p className="text-gray-700 mb-4">
                 Hi, I&apos;m Dee, a qualified Personal Trainer and coach passionate about helping people unlock their full potential. My own journey started with struggling to gain weight and build confidence in the gym so I know how it feels to want change but not know where to start. Over the years I&apos;ve built not only my strength, but also a lifestyle I&apos;m proud of, and now I help others do the same.
               </p>
-              <p className="text-gray-700 mb-4">
-                I believe that fitness is more than just physical transformation—it&apos;s about building confidence, mental strength, and creating lasting lifestyle changes. My approach combines proven training methods with personalized nutrition guidance and unwavering support.
-              </p>
               <p className="text-gray-700">
-                Whether you&apos;re just starting your fitness journey or looking to break through plateaus, I&apos;m here to guide you every step of the way. Together, we&apos;ll create a customized plan that fits your lifestyle and helps you achieve sustainable results.
+                Whether your goal is to lose weight, gain muscle, improve your fitness, or just feel better in your own skin, I create tailored programmes that work around your life, not the other way around. My coaching is supportive, realistic, and focused on long-term results because this isn&apos;t just about fitness, it&apos;s about building confidence and a lifestyle that lasts.
               </p>
             </div>
           </motion.div>
