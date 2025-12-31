@@ -14,7 +14,8 @@ export default function Section({
   ...props 
 }: SectionProps) {
   const themes = {
-    light: 'bg-white text-dark',
+    // Light sections use a soft brand-pink background (cards remain white for contrast)
+    light: 'bg-pink-50 text-dark',
     dark: 'bg-dark text-white',
     'dark-green': 'bg-dark-teal text-white',
   };

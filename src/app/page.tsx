@@ -16,7 +16,7 @@ import CTASection from '@/components/landing/CTASection';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-pink-50">
       <Navigation />
 
       {/* Hero Section - Full height, centered typography */}
@@ -204,7 +204,7 @@ export default function Home() {
       </Section>
 
       {/* FAQ Section */}
-      <Section theme="light" padding="lg" className="bg-gray-50">
+      <Section theme="light" padding="lg" className="bg-pink-50">
         <Container size="md">
           <motion.div
             className="text-center mb-12"

@@ -31,7 +31,7 @@ const quotes = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-pink-50">
       <Navigation />
 
       {/* Hero Section - Similar to homepage */}
@@ -186,7 +186,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Mission Statement */}
-      <Section theme="light" padding="lg" className="bg-gray-50">
+      <Section theme="light" padding="lg" className="bg-pink-50">
         <Container size="md">
           <motion.div
             initial="hidden"
