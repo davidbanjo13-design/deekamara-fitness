@@ -49,8 +49,9 @@ export async function POST(request: Request) {
       console.error('Database error:', dbError);
       return NextResponse.json(
         {
-          error: 'Failed to submit quiz',
-          details: dbError.message,
+          // Put the specific message in `error` so the client always shows something useful
+          error: dbError.message,
+          details: typeof dbError.details === 'string' ? dbError.details : null,
           code: dbError.code,
         },
         { status: 500 }

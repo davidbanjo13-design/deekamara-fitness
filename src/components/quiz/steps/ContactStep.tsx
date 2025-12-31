@@ -56,22 +56,36 @@ export default function ContactStep() {
       });
 
       if (!response.ok) {
+        const fallback = `Failed to submit quiz (HTTP ${response.status})`;
+
+        // Try JSON first, then text
+        let bodyText: string | null = null;
         let errorData: unknown = null;
         try {
           errorData = await response.json();
         } catch {
-          // ignore
+          try {
+            bodyText = await response.text();
+          } catch {
+            // ignore
+          }
         }
 
-        const fallback = `Failed to submit quiz (HTTP ${response.status})`;
         if (errorData && typeof errorData === 'object') {
           const obj = errorData as Record<string, unknown>;
           const details = obj.details;
           const message =
-            (typeof obj.error === 'string' && obj.error) ||
+            // Prefer details first (often the useful string)
             (typeof details === 'string' && details) ||
+            (typeof obj.error === 'string' && obj.error) ||
             (typeof obj.message === 'string' && obj.message);
-          throw new Error(message || fallback);
+
+          const code = typeof obj.code === 'string' ? obj.code : null;
+          throw new Error(code ? `${message || fallback} (${code})` : message || fallback);
+        }
+
+        if (bodyText && bodyText.trim()) {
+          throw new Error(bodyText.slice(0, 240));
         }
 
         throw new Error(fallback);
