@@ -42,10 +42,6 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <Badge variant="dark" className="mb-6">
-                Online & In-Person Coaching
-              </Badge>
-              
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display mb-10 text-dark">
                 Transform Your{' '}
                 <span className="font-display-italic">Body & Mind</span>
