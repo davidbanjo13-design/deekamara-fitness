@@ -6,8 +6,9 @@
   --dark: #000000;
   --dark-green: #0a1f1a;
   --dark-teal: #0d2d28;
-  --accent-lime: #c4ff61;
-  --accent-cyan: #00ffd1;
+  /* Primary accent is PINK (brand) */
+  --accent-lime: #f472b6; /* used as a lighter hover tint */
+  --accent-cyan: #db2777; /* legacy name, now mapped to brand pink */
   --accent-pink: #ec4899;
 }
 
@@ -22,8 +23,9 @@
   --color-dark: #000000;
   --color-dark-green: #0a1f1a;
   --color-dark-teal: #0d2d28;
-  --color-accent-lime: #c4ff61;
-  --color-accent-cyan: #00ffd1;
+  /* Primary accent is PINK (brand) */
+  --color-accent-lime: #f472b6; /* hover / soft accent */
+  --color-accent-cyan: #db2777; /* legacy token name, now brand pink */
   --color-accent-pink: #ec4899;
   
   /* Keep existing pink/rose for backwards compatibility */
