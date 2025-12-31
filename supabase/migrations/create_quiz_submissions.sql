@@ -13,7 +13,7 @@ create table quiz_submissions (
     status text default 'new'::text,
     
     -- Add constraints
-    constraint valid_goal check (goal in ('lifestyle', 'aesthetic', 'weight-loss', 'strength')),
+    constraint valid_goal check (goal in ('lifestyle', 'aesthetic', 'weight-loss', 'weight-gain', 'strength')),
     constraint valid_gender check (gender in ('female', 'male', 'other')),
     constraint valid_age check (age in ('under-20', '21-25', '26-30', 'over-30')),
     constraint valid_email check (email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'),
