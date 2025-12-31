@@ -46,14 +46,10 @@ export default function Home() {
                 Online & In-Person Coaching
               </Badge>
               
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display mb-6 text-dark">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display mb-10 text-dark">
                 Transform Your{' '}
                 <span className="font-display-italic">Body & Mind</span>
               </h1>
-              
-              <p className="text-xl sm:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto leading-relaxed">
-                DeeKamara is your AI-driven coach that listens, learns, and adapts — helping your body find its natural rhythm every day.
-              </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/quiz">
