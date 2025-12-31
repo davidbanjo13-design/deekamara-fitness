@@ -69,19 +69,27 @@ export default function Home() {
         {/* Mobile CTAs pinned near bottom (so image stays clear) */}
         <div className="sm:hidden absolute left-0 right-0 z-20 px-4 pb-4" style={{ bottom: '24px' }}>
           <div className="max-w-lg mx-auto">
-            <div className="bg-white/70 backdrop-blur-md rounded-2xl p-3 shadow-[0_8px_24px_rgba(0,0,0,0.10)]">
-              <div className="flex gap-3">
-                <Link href="/quiz" className="flex-1">
-                  <Button variant="primary" size="md" fullWidth>
-                    Start Your Journey
-                  </Button>
-                </Link>
-                <Link href="/about" className="flex-1">
-                  <Button variant="secondary" size="md" fullWidth className="border-0">
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
+            <div className="flex gap-3">
+              <Link href="/quiz" className="flex-1">
+                <Button
+                  variant="primary"
+                  size="md"
+                  fullWidth
+                  className="shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
+                >
+                  Start Your Journey
+                </Button>
+              </Link>
+              <Link href="/about" className="flex-1">
+                <Button
+                  variant="secondary"
+                  size="md"
+                  fullWidth
+                  className="border-0 bg-white/70 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
