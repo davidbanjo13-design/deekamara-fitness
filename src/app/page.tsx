@@ -47,7 +47,8 @@ export default function Home() {
                 <span className="font-display-italic">Body & Mind</span>
               </h1>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              {/* Desktop/tablet CTAs (keep under headline) */}
+              <div className="hidden sm:flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/quiz">
                   <Button variant="primary" size="lg">
                     Start Your Journey
@@ -65,6 +66,26 @@ export default function Home() {
             </motion.div>
           </div>
         </Container>
+
+        {/* Mobile CTAs pinned near bottom (so image stays clear) */}
+        <div className="sm:hidden absolute left-0 right-0 z-20 px-4 pb-4" style={{ bottom: '96px' }}>
+          <div className="max-w-lg mx-auto">
+            <div className="bg-white/70 backdrop-blur-md border border-white/60 rounded-2xl p-3 shadow-[0_8px_24px_rgba(0,0,0,0.10)]">
+              <div className="flex gap-3">
+                <Link href="/quiz" className="flex-1">
+                  <Button variant="primary" size="md" fullWidth>
+                    Start Your Journey
+                  </Button>
+                </Link>
+                <Link href="/about" className="flex-1">
+                  <Button variant="secondary" size="md" fullWidth>
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Social Proof at bottom of hero */}
         <div className="absolute bottom-0 left-0 right-0 z-10 bg-white/90 backdrop-blur-sm">
